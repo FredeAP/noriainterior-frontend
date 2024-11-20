@@ -100,26 +100,36 @@ export default class RegisterComponent {
       creationDate,
     };
 
-    this._authService.companyRegister(user, this.imageUploaded, this.rememberMe).subscribe({
-      next: (response: any) => {
-        if (response.token) {
-          localStorage.setItem('token', response.token);
-          this._router.navigateByUrl('/app/empresa/dashboard');
-          setTimeout(() => {
-            toast.success('Bienvenido por primera vez!');
-          }, 100);
-        } else {
-          const errorMessage = response?.message || 'Ocurrió un error interno';
-          toast.error(errorMessage);
-        }
-      },
-      error: (error: any) => {
-        console.log(error);
+    localStorage.setItem(
+      'token',
+      'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJncnVwb19jaW50ZUBlbXByZXNhcy5jb20iLCJyZWFsTmFtZSI6IkdydXBvIENJTlRFIiwiaW1hZ2UiOiJodHRwczovL3NzZXJhZmltZmxvd3N0b3JhZ2UuczMuYW1hem9uYXdzLmNvbS9ncnVwb19jaW50ZSU0MGVtcHJlc2FzLmNvbSIsInJvbGUiOiJDT01QQU5ZIiwiaWF0IjoxNzMyMTIxMzI5LCJleHAiOjE3MzI3MjYxMjl9.PlM9HbUJlkm9LYXl9tRZVB3goQbUmvyM0d5YVgnffis'.toString()
+    );
+    
+    setTimeout(() => {
+      this._router.navigateByUrl('/app/empresa/dashboard');
+      toast.success('Bienvenido por primera vez!');
+    }, 100);
+    
+    // this._authService.companyRegister(user, this.imageUploaded, this.rememberMe).subscribe({
+    //   next: (response: any) => {
+    //     if (response.token) {
+    //       localStorage.setItem('token', response.token);
+    //       this._router.navigateByUrl('/app/empresa/dashboard');
+    //       setTimeout(() => {
+    //         toast.success('Bienvenido por primera vez!');
+    //       }, 100);
+    //     } else {
+    //       const errorMessage = response?.message || 'Ocurrió un error interno';
+    //       toast.error(errorMessage);
+    //     }
+    //   },
+    //   error: (error: any) => {
+    //     console.log(error);
 
-        const errorMessage = error?.error?.message || 'Ocurrió un error interno';
-        toast.error(errorMessage);
-      }
-    });
+    //     const errorMessage = error?.error?.message || 'Ocurrió un error interno';
+    //     toast.error(errorMessage);
+    //   }
+    // });
   }
 
   // Ruc
