@@ -1,0 +1,7 @@
+html, .scrollbar-container {
+  @apply overflow-auto
+    [&::-webkit-scrollbar-thumb]:rounded-full
+    [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar]:h-[6px]
+    [&::-webkit-scrollbar-track]:bg-dark-5
+    [&::-webkit-scrollbar-thumb]:bg-dark-7;
+}
