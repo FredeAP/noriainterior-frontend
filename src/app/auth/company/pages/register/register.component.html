@@ -6,11 +6,11 @@
     (ngSubmit)="companyRegister()"
   >
     <div
-      class="h-full min-h-dvh flex flex-col justify-center p-4 sm:p-10 shadow-sm dark:bg-neutral-800 dark:border-r-[1px] dark:border-r-neutral-600"
+      class="h-full min-h-dvh flex flex-col justify-center p-4 sm:p-10 shadow-sm dark:bg-[#E6E6FA] dark:border-r-[1px] dark:border-r-neutral-600"
     >
       <!-- Título -->
       <div class="text-center">
-        <h1 class="block text-2xl font-bold text-white">
+        <h1 class="block text-2xl font-bold text-black">
           Crea cuenta de Empresa
         </h1>
         <p class="mt-2 text-sm text-dark-gray">
@@ -73,7 +73,7 @@
             <div>
               <label
                 for="realName"
-                class="block w-fit text-sm font-medium mb-2 dark:text-neutral-200"
+                class="block w-fit text-sm font-medium mb-2 dark:text-neutral-800"
                 >Nombre de la Empresa</label
               >
               <div class="relative">
@@ -104,7 +104,7 @@
                   name="realName"
                   formControlName="realName"
                   type="text"
-                  class="ps-11 block w-full py-3 px-4 text-sm ring-0 rounded-md disabled:opacity-50 disabled:pointer-events-none border border-gray-200 dark:bg-neutral-900 dark:border-neutral-700 dark:hover:bg-neutral-950 focus:ring-0 dark:text-neutral-200 dark:placeholder-neutral-500 transition-colors duration-300"
+                  class="ps-11 block w-full py-3 px-4 text-sm ring-0 rounded-md disabled:opacity-50 disabled:pointer-events-none border border-gray-200 dark:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-150 focus:ring-0 dark:text-neutral-900 dark:placeholder-neutral-500 transition-colors duration-300"
                   placeholder="Empresa S.A.C."
                 />
               </div>
@@ -125,7 +125,7 @@
             <div>
               <label
                 for="ruc"
-                class="block w-fit text-sm font-medium mb-2 dark:text-neutral-200"
+                class="block w-fit text-sm font-medium mb-2 dark:text-neutral-900"
                 >RUC</label
               >
               <div class="relative">
@@ -163,7 +163,7 @@
                   type="number"
                   pattern="\d{11}"
                   style="appearance: textfield; -moz-appearance: textfield"
-                  class="ps-11 block w-full py-3 px-4 text-sm ring-0 rounded-md disabled:opacity-50 disabled:pointer-events-none border border-gray-200 dark:bg-neutral-900 dark:border-neutral-700 dark:hover:bg-neutral-950 focus:ring-0 dark:text-neutral-200 dark:placeholder-neutral-500 transition-colors duration-300"
+                  class="ps-11 block w-full py-3 px-4 text-sm ring-0 rounded-md disabled:opacity-50 disabled:pointer-events-none border border-gray-200 dark:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-150 focus:ring-0 dark:text-neutral-900 dark:placeholder-neutral-500 transition-colors duration-300"
                   placeholder="01234567891"
                   (keyup)="enforceRucPattern($event)"
                 />
@@ -181,7 +181,7 @@
             <div>
               <label
                 for="username"
-                class="block w-fit text-sm font-medium mb-2 dark:text-neutral-200"
+                class="block w-fit text-sm font-medium mb-2 dark:text-neutral-900"
                 >Correo Electrónico</label
               >
               <div class="relative">
@@ -212,7 +212,7 @@
                   name="username"
                   formControlName="username"
                   type="text"
-                  class="ps-11 block w-full py-3 px-4 text-sm ring-0 rounded-md disabled:opacity-50 disabled:pointer-events-none border border-gray-200 dark:bg-neutral-900 dark:border-neutral-700 dark:hover:bg-neutral-950 focus:ring-0 dark:text-neutral-200 dark:placeholder-neutral-500 transition-colors duration-300"
+                  class="ps-11 block w-full py-3 px-4 text-sm ring-0 rounded-md disabled:opacity-50 disabled:pointer-events-none border border-gray-200 dark:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-150 focus:ring-0 dark:text-neutral-900 dark:placeholder-neutral-500 transition-colors duration-300"
                   placeholder="trabajador@empresa.com"
                 />
               </div>
@@ -232,7 +232,7 @@
             <div>
               <label
                 for="strong-password-with-indicator-1"
-                class="block w-fit text-sm font-medium mb-2 dark:text-neutral-200"
+                class="block w-fit text-sm font-medium mb-2 dark:text-neutral-900"
                 >Contraseña</label
               >
               <div class="relative flex-1">
@@ -266,7 +266,7 @@
                     type="password"
                     name="password"
                     formControlName="password"
-                    class="ps-11 block w-full py-3 px-4 text-sm ring-0 rounded-md disabled:opacity-50 disabled:pointer-events-none border border-gray-200 dark:bg-neutral-900 dark:border-neutral-700 dark:hover:bg-neutral-950 focus:ring-0 dark:text-neutral-200 dark:placeholder-neutral-500 transition-colors duration-300"
+                    class="ps-11 block w-full py-3 px-4 text-sm ring-0 rounded-md disabled:opacity-50 disabled:pointer-events-none border border-gray-200 dark:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-150 focus:ring-0 dark:text-neutral-900 dark:placeholder-neutral-500 transition-colors duration-300"
                     placeholder="••••••••••••••"
                   />
 
@@ -553,7 +553,7 @@
             <div>
               <label
                 for="mainCurrency"
-                class="block w-fit text-sm font-medium mb-2 dark:text-neutral-200"
+                class="block w-fit text-sm font-medium mb-2 dark:text-neutral-900"
                 >Moneda Principal
               </label>
               <div>
@@ -562,11 +562,11 @@
                   formControlName="mainCurrency"
                   data-hs-select='{
                     "placeholder": "<span class=\"inline-flex items-center text-neutral-500 \"><svg class=\"shrink-0 size-3.5 me-2\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3\"/></svg> Filter</span>",
-                    "toggleTag": "<button type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-800 dark:text-neutral-200 \" data-title></span></button>",
-                    "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:outline-none dark:bg-neutral-900 dark:hover:bg-neutral-950 dark:border-neutral-700 dark:text-neutral-200 dark:focus:ring-0 transition-colors duration-300",
+                    "toggleTag": "<button type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-800 dark:text-neutral-900 \" data-title></span></button>",
+                    "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:outline-none dark:bg-neutral-100 dark:hover:bg-neutral-350 dark:border-neutral-700 dark:text-neutral-200 dark:focus:ring-0 transition-colors duration-300",
                     "dropdownClasses": "mt-2 max-h-72 p-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 dark:bg-neutral-900 dark:border-neutral-700",
-                    "optionClasses": "py-2 px-3 w-full text-sm text-gray-800 cursor-pointer hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:text-neutral-200 dark:focus:bg-neutral-800",
-                    "optionTemplate": "<div class=\"flex items-center\"><div class=\"me-2\" data-icon></div><div><div class=\"hs-selected:font-semibold text-sm text-gray-800 dark:text-neutral-200 \" data-title></div></div><div class=\"ms-auto\"><span class=\"hidden hs-selected:block\"><svg class=\"shrink-0 size-4 text-blue-400\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" viewBox=\"0 0 16 16\"><path d=\"M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z\"/></svg></span></div></div>",
+                    "optionClasses": "py-2 px-3 w-full text-sm text-gray-800 cursor-pointer hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:bg-neutral-100 dark:hover:bg-neutral-10 dark:text-neutral-800 dark:focus:bg-neutral-100",
+                    "optionTemplate": "<div class=\"flex items-center\"><div class=\"me-2\" data-icon></div><div><div class=\"hs-selected:font-semibold text-sm text-gray-900 dark:text-neutral-900 \" data-title></div></div><div class=\"ms-auto\"><span class=\"hidden hs-selected:block\"><svg class=\"shrink-0 size-4 text-blue-400\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" viewBox=\"0 0 16 16\"><path d=\"M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z\"/></svg></span></div></div>",
                     "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"shrink-0 size-3.5 text-gray-500 dark:text-neutral-500 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m7 15 5 5 5-5\"/><path d=\"m7 9 5-5 5 5\"/></svg></div>"
                   }'
                   class="hidden"
@@ -654,7 +654,7 @@
                     name="image"
                     type="file"
                     accept=".png, .jpg, .jpeg"
-                    class="ps-11 block w-full py-3 px-4 text-sm ring-0 rounded-md disabled:opacity-50 disabled:pointer-events-none border border-gray-200 dark:bg-neutral-900 dark:border-neutral-700 dark:hover:bg-neutral-950 focus:ring-0 dark:text-neutral-500 transition-colors duration-300 hover:cursor-pointer"
+                    class="ps-11 block w-full py-3 px-4 text-sm ring-0 rounded-md disabled:opacity-50 disabled:pointer-events-none border border-gray-200 dark:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-950 focus:ring-0 dark:text-neutral-500 transition-colors duration-300 hover:cursor-pointer"
                     (change)="onFileChange($event)"
                   />
                 </div>
