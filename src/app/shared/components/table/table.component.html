@@ -140,11 +140,11 @@
                       type="checkbox"
                       class="border-gray-200 rounded text-blue-600 focus:ring-blue-500 dark:focus:ring-0 dark:focus:ring-offset-0 cursor-pointer"
                       [ngClass]="{
-                        'dark:bg-neutral-800 dark:border-neutral-600 dark:checked:bg-purple-500 dark:checked:border-purple-500':
+                        'dark:bg-neutral-800 dark:border-neutral-600 dark:checked:bg-blue-500 dark:checked:border-blue-500':
                           style === 'dark',
-                        'dark:bg-neutral-700 dark:border-neutral-500 dark:checked:bg-purple-400 dark:checked:border-purple-400':
+                        'dark:bg-neutral-700 dark:border-neutral-500 dark:checked:bg-blue-400 dark:checked:border-blue-400':
                           style === 'default',
-                        'dark:bg-neutral-700 dark:border-neutral-600 dark:checked:bg-purple-400 dark:checked:border-purple-400':
+                        'dark:bg-neutral-700 dark:border-neutral-600 dark:checked:bg-blue-400 dark:checked:border-blue-400':
                           style === 'light'
                       }"
                       (click)="toggleAllCheckboxesVisiblesInHTML($event)"
@@ -203,11 +203,11 @@
                           type="checkbox"
                           class="row-checkbox-table border-gray-200 rounded text-blue-600 focus:ring-blue-500 dark:focus:ring-0 dark:focus:ring-offset-0 cursor-pointer"
                           [ngClass]="{
-                            'dark:bg-neutral-800 dark:border-neutral-600 dark:checked:bg-purple-500 dark:checked:border-purple-500':
+                            'dark:bg-neutral-800 dark:border-neutral-600 dark:checked:bg-blue-500 dark:checked:border-blue-500':
                               style === 'dark',
-                            'dark:bg-neutral-700 dark:border-neutral-500 dark:checked:bg-purple-400 dark:checked:border-purple-400':
+                            'dark:bg-neutral-700 dark:border-neutral-500 dark:checked:bg-blue-400 dark:checked:border-blue-400':
                               style === 'default',
-                            'dark:bg-neutral-700 dark:border-neutral-600 dark:checked:bg-purple-400 dark:checked:border-purple-400':
+                            'dark:bg-neutral-700 dark:border-neutral-600 dark:checked:bg-blue-400 dark:checked:border-blue-400':
                               style === 'light'
                           }"
                           [value]="item.id"
@@ -277,7 +277,7 @@
                               item[header.toLowerCase()] === 'No Vendida' || item[header.toLowerCase()] === 'Cobrada',
                           '!bg-blue-200' : item[header.toLowerCase()] === 'No Vendido' || item[header.toLowerCase()] === 'No Vendida',
                           '!bg-yellow-100' : item[header.toLowerCase()] === 'Pendiente',
-                          '!bg-purple-300' : item[header.toLowerCase()] === 'Cobrado' || item[header.toLowerCase()] === 'Cobrada',
+                          '!bg-blue-300' : item[header.toLowerCase()] === 'Cobrado' || item[header.toLowerCase()] === 'Cobrada',
 
                           '!text-cyan-100' : item[header.toLowerCase()] === 'Factura',
                           '!text-orange-200' : item[header.toLowerCase()] === 'Letra de Cambio',
@@ -303,7 +303,7 @@
                         <button
                           (click)="emitEditRow(showedData[$index])"
                           type="button"
-                          class="inline-flex items-center gap-x-2 text-[13px] max-sm:text-xs font-semibold rounded-lg border border-transparent text-blue-600 hover:text-blue-800 focus:outline-none focus:text-blue-800 disabled:opacity-50 disabled:pointer-events-none dark:text-purple-400 dark:hover:text-purple-500 dark:focus:text-purple-400"
+                          class="inline-flex items-center gap-x-2 text-[13px] max-sm:text-xs font-semibold rounded-lg border border-transparent text-blue-600 hover:text-blue-800 focus:outline-none focus:text-blue-800 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-400 dark:hover:text-blue-500 dark:focus:text-blue-400"
                         >
                           <svg
                             class="w-6 h-auto"
@@ -467,7 +467,7 @@
                       [ngClass]="{
                         'rounded-b-lg': $index === 0,
                         'rounded-t-lg': $index === itemsPerPage.length - 1,
-                        'text-purple-400': item === currentItemsPerPageValue,
+                        'text-blue-400': item === currentItemsPerPageValue,
                         'border-t': $index < itemsPerPage.length - 1,
                         'dark:bg-neutral-900 dark:hover:bg-neutral-950 dark:border-neutral-700':
                           style === 'dark',
@@ -528,7 +528,7 @@
                 type="button"
                 class="size-10 flex justify-center items-center text-gray-800 dark:text-neutral-200 hover:bg-gray-100 focus:outline-none text-sm disabled:opacity-50 disabled:pointer-events-none"
                 [ngClass]="{
-                  'dark:text-purple-400': page === currentPageValue,
+                  'dark:text-blue-400': page === currentPageValue,
                   'dark:hover:bg-neutral-950': style === 'dark',
                   'dark:hover:bg-neutral-850': style === 'default',
                   'dark:hover:bg-neutral-800': style === 'light'
