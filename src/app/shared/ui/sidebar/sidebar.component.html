@@ -2,18 +2,18 @@
 <div
   id="hs-offcanvas-custom-backdrop-color"
   aria-labelledby="hs-offcanvas-custom-backdrop-color-label"
-  class="hs-overlay-backdrop-open:hidden max-lg:hs-overlay-backdrop-open:block max-lg:hs-overlay-backdrop-open:grayscale lg:fixed z-[110] w-[272px] max-lg:w-full max-lg:max-w-[300px] h-dvh bg-neutral-800 border-r border-neutral-600 hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 start-0 bottom-0 overflow-y-auto lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-neutral-600 [&::-webkit-scrollbar-thumb]:bg-neutral-500"
+  class="hs-overlay-backdrop-open:hidden max-lg:hs-overlay-backdrop-open:block max-lg:hs-overlay-backdrop-open:grayscale lg:fixed z-[110] w-[272px] max-lg:w-full max-lg:max-w-[300px] h-dvh bg-[#F3F3FE] border-r border-neutral-400 hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 start-0 bottom-0 overflow-y-auto lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-neutral-600 [&::-webkit-scrollbar-thumb]:bg-neutral-500"
   role="dialog"
   tabindex="-1"
   aria-label="Sidebar"
 >
   <!-- Cabecera -->
   <div
-    class="h-[60px] px-4 flex justify-between items-center border-b border-neutral-600"
+    class="h-[60px] px-4 flex justify-between items-center border-b border-neutral-900"
   >
     <!-- Logo -->
     <div
-      class="w-full flex justify-between items-center gap-3 text-neutral-200 focus:outline-none focus:opacity-80 transition-transform duration-300"
+      class="w-full flex justify-between items-center gap-3 text-neutral-900 focus:outline-none focus:opacity-80 transition-transform duration-300"
       aria-label="Brand"
     >
       <!-- Imagen + Nombre -->
@@ -107,7 +107,7 @@
             <span [id]="'icon-' + a"></span>
             {{ padre.title }}
             <svg
-              class="hs-accordion-active:block ms-auto hidden size-4 text-dark-gray"
+              class="hs-accordion-active:block ms-auto hidden size-4 text-dark-1"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -121,7 +121,7 @@
               <path d="m18 15-6-6-6 6" />
             </svg>
             <svg
-              class="hs-accordion-active:hidden ms-auto block size-4 text-dark-gray"
+              class="hs-accordion-active:hidden ms-auto block size-4 text-dark-1"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -135,7 +135,7 @@
               <path d="m6 9 6 6 6-6" />
             </svg>
           </button>
-  
+
           <!-- Hijos -->
           <div
             [id]="combinePathsOnFather(padre.route) + '-accordion'"
@@ -203,7 +203,7 @@
                     <path d="m6 9 6 6 6-6" />
                   </svg>
                 </button>
-  
+
                 <!-- Nietos -->
                 <div
                   [id]="

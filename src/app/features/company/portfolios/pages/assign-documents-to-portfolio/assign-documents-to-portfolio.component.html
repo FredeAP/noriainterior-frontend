@@ -1,12 +1,12 @@
 <section class="w-full h-full">
 
   @if (isLoading === false) {
-    
+
     <div class="flex gap-3 max-[1400px]:flex-col mb-6">
       <!-- Banco y Tasa -->
       <div class="flex-1 flex flex-col gap-4">
-        
-        <h2 class="max-sm:ps-3 font-medium text-[18px] pb-2 border-b border-b-neutral-500 border-opacity-50 mb-1">
+
+        <h2 class="max-sm:ps-3 font-medium text-[18px] pb-2 border-b border-b-neutral-500 border-opacity-50 mb-1 dark:text-neutral-900">
           Cartera
         </h2>
 
@@ -50,11 +50,11 @@
             Guardar Cambios
           </button>
         </div>
-        
-        <h2 class="max-sm:ps-3 font-medium text-[18px] pb-2 border-b border-b-neutral-500 border-opacity-50 mb-1">
+
+        <h2 class="max-sm:ps-3 font-medium text-[18px] pb-2 border-b border-b-neutral-500 border-opacity-50 mb-1 dark:text-neutral-900">
           Carteras Disponibles
         </h2>
-        
+
         @if (isTablePortfoliosLoading === false) {
 
           <app-table
@@ -77,21 +77,21 @@
           </section>
 
         } @else {
-          
+
           <section>
             <p class="text-red-200 dark:text-red-400">¡Ocurrió un error interno!</p>
           </section>
 
         }
-    
+
       </div>
 
       <!-- Documentos -->
-      <div class="flex-1 flex flex-col gap-4">        
-        <h2 class="max-sm:ps-3 font-medium text-[18px] pb-2 border-b border-b-neutral-500 border-opacity-50 mb-1">
+      <div class="flex-1 flex flex-col gap-4">
+        <h2 class="max-sm:ps-3 font-medium text-[18px] pb-2 border-b border-b-neutral-500 border-opacity-50 mb-1 dark:text-neutral-900">
           Documentos
         </h2>
-        
+
         <!-- Selector de documentos (múltiple) -->
         <mat-form-field class="w-full">
           <mat-label>Selecciona los documentos</mat-label>
@@ -101,8 +101,8 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
-        
-        <h2 class="max-sm:ps-3 font-medium text-[18px] pb-2 border-b border-b-neutral-500 border-opacity-50 mb-1">
+
+        <h2 class="max-sm:ps-3 font-medium text-[18px] pb-2 border-b border-b-neutral-500 border-opacity-50 mb-1 dark:text-neutral-900">
           Documentos Disponibles
         </h2>
 
@@ -124,7 +124,7 @@
           </section>
 
         } @else {
-          
+
           <section>
             <p class="text-red-200 dark:text-red-400">¡Ocurrió un error interno!</p>
           </section>
@@ -138,12 +138,12 @@
     <section>
       <app-loader></app-loader>
     </section>
-  
+
   } @else if (isLoading === null) {
-  
+
     <section>
       <p class="text-red-200 dark:text-red-400">¡Ocurrió un error interno!</p>
     </section>
-  
+
   }
 </section>
