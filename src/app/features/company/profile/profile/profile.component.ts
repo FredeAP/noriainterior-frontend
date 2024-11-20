@@ -43,7 +43,8 @@ export default class ProfileComponent {
         Validators.minLength(11),
         Validators.maxLength(11),
       ]),
-      username: this._formBuilder.control('', [
+      username: this._formBuilder.control(
+        { value: '', disabled: true }, [
         Validators.required,
         Validators.email,
         Validators.maxLength(150)
