@@ -43,7 +43,7 @@ import { DashboardPrintComponent } from '../dashboard-print/dashboard-print.comp
 export default class DashboardComponent {
   public isLoading: true | false | null = true;
   public previewDataCurrency: CurrencyEnum = CurrencyEnum.PEN;
-  public showExchangeRateTable: boolean = false;
+  public showExchangeRateTable: boolean = true;
   public dashboardData!: Dashboard;
   
   // Tasa de cambio
