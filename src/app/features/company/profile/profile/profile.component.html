@@ -222,6 +222,7 @@
               <!-- Part: Input -->
               <input
                 disabled
+				[disabled]="true"
                 id="username"
                 name="username"
                 formControlName="username"
@@ -230,16 +231,6 @@
                 placeholder="trabajador@empresa.com"
               />
             </div>
-            <!-- Validators -->
-            @if (isRequired({field: 'username'})) {
-            <small class="text-red-400">El correo es obligatorio</small>
-            } @if (hasEmailError({field: 'username'})) {
-            <small class="text-red-400">El correo debe ser válido</small>
-            } @if (hasMaxLengthError({field: 'username'})) {
-            <small class="text-red-400"
-              >El correo no debe exceder los 150 caracteres</small
-            >
-            }
           </div>
           
           <!-- Contraseña -->
