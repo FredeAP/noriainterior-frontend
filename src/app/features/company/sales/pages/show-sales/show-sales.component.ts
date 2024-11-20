@@ -78,7 +78,7 @@ export default class ShowSalesComponent {
       if (this.cantInterval === 1) {
         clearInterval(this.intervalId);
       }
-    }, 3000);
+    }, 5000);
   }
 
   ngOnDestroy() {
